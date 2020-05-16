@@ -1,0 +1,36 @@
+.contenedor {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+
+.contenedor .item  {
+    background: #ff8000;
+    /* grid-column-start: 1;
+    grid-column-end: 2; */ /* Números negativos de der a izq */
+
+    /* grid-row-start: 1 ;
+    grid-row-end: 12; */
+
+    /* grid-column: 1 / 4;
+    grid-row: 1/3; */
+
+    /* 
+        Primer parámetro: grid-row-star
+        Segundo parámetro: grid-column-start
+        Tercer parámetro: grid-row-end
+        Cuarto parámetro: grid-column-end    
+    */
+    /* grid-area: 2/1/4/3; */
+
+
+    /* Span */
+    grid-column: 1 / span 2 ;
+    grid-row: 2/ span 2; /* Inicio y se expande por dos co */
+
+
+
+
+}
